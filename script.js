@@ -45,7 +45,7 @@ function addTask() {
 
     if (title === "") return;
 
-    // 🔥 Check duplicate task
+    // Check duplicate task
     let exists = tasks.some(
         t => t.title.toLowerCase() === title.toLowerCase()
     );
@@ -75,3 +75,4 @@ taskbox.addEventListener("keyup", (e) => {
         addTask();
     }
 });
+
